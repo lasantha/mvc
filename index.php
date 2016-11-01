@@ -11,6 +11,4 @@ require_once __DIR__.'/Config/database.php';
 
 $app = new Bootstrap();
 
-
-
 ?>
