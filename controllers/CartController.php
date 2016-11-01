@@ -12,5 +12,9 @@ class CartController extends Controller
 
 	function addtocart( $args = false ){
 		$id = $args;
+		require_once 'models/CartModel.php';
+		$cartObj = new CartModel();
+		$cartObj->addtocart($id);
+		//$this->view->render("Cart/index");
 	}
 }

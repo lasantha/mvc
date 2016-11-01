@@ -25,4 +25,8 @@ class Session
 		//unset($_SESSION);
 		session_destroy();
 	}
+
+	public static function sesunset( $data ){
+		 unset($data);
+	}
 }
